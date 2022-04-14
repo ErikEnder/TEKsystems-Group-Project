@@ -9,3 +9,9 @@ body {
   font-size: 2.5rem;
   color: hotpink;
 }
+
+.awesome-image img {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
