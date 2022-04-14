@@ -3,6 +3,11 @@ body {
   background-color: black;
 }
 
+.meme {
+  background-image: url("im sorry.gif");
+  background-repeat: repeat;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -13,12 +18,53 @@ body {
   padding: 1em;
 }
 
+#tek-logo {
+  height: 100%;
+  width: 100%;
+}
+
+.tek-cont {
+  position: absolute;
+  height: 200px;
+  width: 400px;
+  top: 0;
+}
+
+.tek-animate {
+  animation-name: wowie;
+  -webkit-animation: wowie;
+  animation-iteration-count: 1;
+  animation-duration: 10s;
+}
+
+@keyframes wowie {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 80vw;
+    top: 100px;
+    transform: rotate(180deg);
+    height: 500px;
+    width: 500px;
+  }
+  100% {
+    left: 0;
+    transform: rotate(360deg);
+    height: initial;
+    width: initial;
+  }
+}
+
 .awesome-image img {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   max-width: 90%;
 }
+
+
+
 
 @media only screen and (max-width: 750px) {
   .header {
